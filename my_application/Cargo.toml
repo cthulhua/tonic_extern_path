@@ -1,0 +1,18 @@
+[package]
+name = "my_application"
+version = "0.1.0"
+authors = ["Danny Hua <danny@42layers.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tonic = "0.1"
+# tonic = { git = "https://github.com/cthulhua/tonic", branch = "extern_path" }
+prost = "0.6"
+prost-types = "0.6"
+uuid = { path= "../uuid" }
+
+[build-dependencies]
+tonic-build = "0.1"
+# tonic-build = { git = "https://github.com/cthulhua/tonic", branch = "extern_path" }
